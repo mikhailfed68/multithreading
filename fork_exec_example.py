@@ -1,5 +1,5 @@
 """
-Example a fork/exec technique in Unix whereby
+Example of a fork/exec technique in Unix whereby
 an executing process spawns a new program.
 """
 

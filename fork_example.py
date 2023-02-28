@@ -1,10 +1,10 @@
-"""Example a fork call in Unix."""
+"""Example of a fork call in Unix."""
 
 from os import fork, getpid, _exit
 
 
 def child():
-    print("Я дочерний поток %i" % getpid())
+    print("Я дочерний процесс %i" % getpid())
     _exit(0)
 
 
@@ -18,3 +18,7 @@ def parent():
             print('Я родительский процесс %i' % getpid())
         if input() == 'q':
             break
+
+
+if __name__ == '__main__':
+    parent()
